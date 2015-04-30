@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.zju.ccnt.openapi.domain">
+
+	<class name="Reply" table="t_reply">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="title" />
+		<property name="content" type="text"/>
+		<property name="postTime" type="timestamp"/>
+		
+		
+		<!-- author属性，本类与User的多对一 -->
+		<many-to-one name="author" class="User" column="userId"></many-to-one>
+		
+		<!-- problem属性，本类与Proble的多对一 -->
+		<many-to-one name="problem" class="Problem" column="problemId"></many-to-one>
+		
+		
+	</class>
+	
+</hibernate-mapping>

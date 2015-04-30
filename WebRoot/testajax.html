@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test ajax</title>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#btn").click(function(){
+		$.ajax({
+				type:'GET',
+				async:true,
+				url:'http://localhost:8081/weather/q?city=%E6%B5%B7%E6%B7%80',
+				success: function(data){
+					alert(data);
+					},
+				error:function(){alert("失败，请稍候重试！");}
+			});
+			
+	});
+});
+</script>
+</head>
+
+<body>
+
+<button id="btn" >click</button>
+</body>
+</html>

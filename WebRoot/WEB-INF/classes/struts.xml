@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 配置为开发模式 -->
+    <constant name="struts.devMode" value="false" />
+    <!-- 把扩展名配置为action -->
+    <constant name="struts.action.extension" value="action" />
+    <!-- 把主题配置为simple -->
+    <constant name="struts.ui.theme" value="simple" />
+	
+   
+    <package name="default" namespace="/" extends="struts-default">
+    
+        <interceptors>
+            <interceptor-stack name="defaultStack">
+    			<interceptor-ref name="defaultStack"></interceptor-ref>
+    		</interceptor-stack>
+        </interceptors>  
+  
+      
+		
+		
+		<action name="api_*" class="apiAction" method="{1}" >
+			<result name="list">/WEB-INF/jsp/apiAction/list.jsp</result>
+			<result name="listType">/WEB-INF/jsp/apiAction/listType.jsp</result>
+			<result name="test">/test.jsp</result>
+			<result name="search">/WEB-INF/jsp/apiAction/listSearch.jsp</result>
+		</action>
+		
+		<action name="apiTest_*" class="apiTestAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/apiTestAction/list.jsp</result>
+		</action>
+		
+		
+		<action name="query_*" class="queryAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/queryAction/list.jsp</result>
+		</action>
+		
+		<action name="news_*" class="newsAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/newsAction/list.jsp</result>
+			<result name="listNews">/WEB-INF/jsp/newsAction/listNews.jsp</result>
+		</action>
+		
+		<action name="problem_*" class="problemAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/problemAction/list.jsp</result>
+			<result name="askUI">/WEB-INF/jsp/problemAction/askUI.jsp</result>
+			<result name="listMy">/WEB-INF/jsp/problemAction/listMy.jsp</result>
+			<result name="listById">/WEB-INF/jsp/problemAction/listById.jsp</result>
+			<result name="listByReplyCount">/WEB-INF/jsp/problemAction/listByReplyCount.jsp</result>
+			<result name="listByViews">/WEB-INF/jsp/problemAction/listByViews.jsp</result>
+		</action>
+		<action name="reply_*" class="replyAction" method="{1}">
+		</action>
+		
+		<action name="manageType_*" class="manageTypeAction" method="{1}">
+			<result name="list">/WEB-INF/manage/manageTypeAction/list.jsp</result>
+			<result name="addUI">/WEB-INF/manage/manageTypeAction/addUI.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageTypeAction/updateUI.jsp</result>
+		</action>
+		
+		<action name="manageApi_*" class="manageApiAction" method="{1}">
+			<result name="list">/WEB-INF/manage/manageApiAction/list.jsp</result>
+			<result name="addUI">/WEB-INF/manage/manageApiAction/addUI.jsp</result>
+			<result name="search">/WEB-INF/manage/manageApiAction/search.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageApiAction/updateUI.jsp</result>
+			<result name="showDetail">/WEB-INF/manage/manageApiAction/showDetail.jsp</result>
+			<result name="uploadUI">/WEB-INF/manage/manageApiAction/uploadUI.jsp</result>
+		</action>
+		
+		<action name="manageServiceError_*" class="manageServiceErrorAction" method="{1}">
+			<result name="addUI">/WEB-INF/manage/manageServiceErrorAction/addUI.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageServiceErrorAction/updateUI.jsp</result>
+		</action>
+		
+		<action name="manageSystemError_*" class="manageSystemErrorAction" method="{1}">
+			<result name="addUI">/WEB-INF/manage/manageSystemErrorAction/addUI.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageSystemErrorAction/updateUI.jsp</result>
+		</action>
+		
+		<action name="manageParameter_*" class="manageParameterAction" method="{1}">
+			<result name="addUI">/WEB-INF/manage/manageParameterAction/addUI.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageParameterAction/updateUI.jsp</result>
+		</action>
+		
+		<action name="manageReturnParameter_*" class="manageReturnParameterAction" method="{1}">
+			<result name="addUI">/WEB-INF/manage/manageReturnParameterAction/addUI.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageReturnParameterAction/updateUI.jsp</result>
+		</action>
+		
+		<action name="manageQuery_*" class="manageQueryAction" method="{1}">
+			<result name="addUI">/WEB-INF/manage/manageQueryAction/addUI.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageQueryAction/updateUI.jsp</result>
+			<result name="updateKeywordsUI">/WEB-INF/manage/manageQueryAction/updateKeywordsUI.jsp</result>
+		</action>
+		<action name="manageNews_*" class="manageNewsAction" method="{1}">
+			<result name="list">/WEB-INF/manage/manageNewsAction/list.jsp</result>
+			<result name="addUI">/WEB-INF/manage/manageNewsAction/addUI.jsp</result>
+			<result name="updateUI">/WEB-INF/manage/manageNewsAction/updateUI.jsp</result>
+		</action>
+		
+		
+	
+		
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="registerUI">/WEB-INF/jsp/userAction/registerUI.jsp</result>
+			<result name="loginUI">/WEB-INF/jsp/userAction/loginUI.jsp</result>
+			<result name="test">/test.jsp</result>
+			<result name="activation">/WEB-INF/jsp/userAction/activation.jsp</result>
+		</action>
+		<action name="manageUser_*" class="manageUserAction" method="{1}">
+			<result name="index" >/WEB-INF/manage/manageUserAction/manage.jsp</result>
+			<result name="login" >/login.jsp</result>
+		</action>
+		
+		<action name="verifyCode_*" class="verifyCodeAction" method="{1}">
+			
+		</action>
+		
+		
+		
+		
+		
+		
+
+
+    </package>
+
+    <!-- Add packages here -->
+
+</struts>

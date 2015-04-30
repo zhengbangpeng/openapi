@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.zju.ccnt.openapi.domain">
+
+	<class name="ServiceError" table="t_serviceError">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="name" />
+		<property name="des" />
+		
+		
+		<!-- api属性，本类与Api的多对一 -->
+		<many-to-one name="api" class="Api" column="apiId"></many-to-one>
+		
+		
+	</class>
+	
+</hibernate-mapping>

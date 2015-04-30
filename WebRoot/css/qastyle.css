@@ -1,0 +1,286 @@
+/* CSS Document */
+@CHARSET "UTF-8";
+body ,html{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width:100%;
+}
+body,td,th {
+	font-size: 12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+input{
+	font-family:"Microsoft Yahei";
+}
+
+input[type="text"],input[type="password"]{
+  background-color:#fff;
+  border:1px solid #ccc;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+  -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition:border linear .2s,box-shadow linear .2s;
+  -moz-transition:border linear .2s,box-shadow linear .2s;
+  -o-transition:border linear .2s,box-shadow linear .2s;
+  transition:border linear .2s,box-shadow linear .2s;
+  /*
+  -moz-border-radius:3px;
+  -khtml-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  */
+}
+input[type="text"]:focus,input[type="password"]:focus{
+  border-color:rgba(82,168,236,0.8);
+  outline:0;
+  outline:thin dotted \9;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+  -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6)
+}
+
+.clearfix,.clear{
+	clear:both;
+	padding:0;
+	margin:0;
+}
+
+.qa-form-btn{float:left;overflow:hidden;padding:4px 16px;border:1px solid #439f27;border-radius:3px;color:#fff;font-size:14px;font-weight:bold;cursor:pointer;outline:none;background:#74c450;}
+.qa-form-btn:hover{
+	background-color:#4bb51c;
+}
+
+
+.btn{ background:#0C0; line-height:30px; height:29px; padding:0px 20px 0px 20px; border:0; color:#FFF}
+
+.top{ width:100%; height:134px; margin:0 auto; background:#009fe3; /*background:url(../images/qa/body_bg.jpg) center center no-repeat;*/}
+.top .line1{ width:985px; margin:0 auto; height:100px; }
+.top .line1 .logo{ width:347px; height:100%; float:left; }
+.top .line1 .userinfo{ float:right;}
+.top .line1 .userinfo .user{ height:50px; line-height:50px; color:#FFF; font-size:14px; text-align:right}
+.top .line1 .userinfo .user a{ color:#A2E1F9}
+.top .line1 .userinfo .search{ text-align:right}
+.keyword { height:25px; width:250px; border:0; color:#333}
+
+.top .line2{ width:985px; margin:0 auto;}
+/*.top .line2 ul li{ float:left; height:30px; line-height:30px; padding:0px 20px 0px 20px; margin:0px 10px 0px 0px; 
+	-moz-border-radius-topleft: 2px; 
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;  
+	border-top-left-radius:2px; 
+	border-top-right-radius:2px;
+	cursor:pointer;
+	background:#377591;
+	font-family:"宋体";
+	font-size:14px;
+}
+.top .line2 ul li:hover{ background:#6197AA;}
+.top .line2 ul li a{ color:#FFF}
+.top .line2 ul li.sel{ background:#6197AA}
+*/
+.top .line2 a{ float:left; height:34px; line-height:34px; padding:0px 20px 0px 20px; margin:0px 10px 0px 0px; 
+	-moz-border-radius-topleft: 2px; 
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;  
+	border-top-left-radius:2px; 
+	border-top-right-radius:2px;
+	cursor:pointer;
+	background:#0795d7;
+	font-family:"宋体";
+	font-size:14px;
+}
+.top .line2 a:hover{ background:#ffcc00;}
+.top .line2 a{ color:#FFF}
+.top .line2 a.sel{ background:#FCB907}
+
+.line{ height:4px; background:#0096bb; width:100%;}
+
+.ftline{
+	width:985px; margin:0 auto; height:40px; background:#e5e5e5
+}
+.footer{ width:985px; margin:0 auto; height:50px; text-align:center; line-height:50px; font-family:"Microsoft Yahei"; }
+
+
+/*.appPages{
+	width:100%;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.appPages a{
+	height:25px;
+	line-height:25px;
+	background:#86a0a8;
+	margin-left:10px;
+	text-align:center;
+	padding:0px 10px 0px 10px;
+	display:inline-block;
+	color:#FFF
+}
+.appPages .pageSel{
+	background:#093b56
+}*/
+
+.appPages{text-align:center;font-size:14px;margin-top:20px;
+	margin-bottom:20px;}
+.appPages .pageSel{background:#baefff;}
+.appPages a, .page span{display:inline-block; width:32px; height:32px; line-height:32px; color:#999; border-radius:50%;margin:0 5px; text-align:center; background:#eee;}
+
+.main{ width:985px; background:#FFF; height:100%; margin:0 auto; padding-bottom:50px;}
+.main .left{ width:750px; float:left;}
+.main .right{ width:220px; float:right; }
+
+.main .right .qqbox{ width:180px; border:1px solid #e9ead9; background:#feffe5; color:#666; height:80px; margin-top:20px; line-height:20px; padding:10px 10px 10px 10px}
+.main .right .category{
+	width:100%; margin-top:20px; margin-bottom:20px;  font-family:"Microsoft Yahei";
+}
+.main .right .category ul li , .main .right .category ul li a{
+	line-height:25px;
+	color:#0096bb;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.main .left .ask-tips-box{
+	 width:720px;  border:1px solid #e9ead9; background:#feffe5; color:#666; height:80px; margin-left:10px; margin-top:20px; margin-bottom:10px; line-height:20px;padding:10px 0 10px 9px;
+}
+.main .left .ask-tips-box a{ color:#0078B6}
+.main .left .ask-title{ line-height:30px; font-size:14px; margin-left:10px; color:#666; font-weight:bold}
+.main .left .ask-title-input{ margin-left:10px; height:40px;}
+.main .left .ask-title-input input{ width:520px;}
+.main .left .ask-category{  line-height:30px; font-size:14px; margin-left:10px; color:#666; font-weight:bold}
+.main .left .ask-category select{ color:#333}
+.main .left .qa-ubb{ margin-left:10px; margin-top:20px;}
+
+.main .left .qaubb{ width:720px; margin-left:10px; margin-top:10px; padding:0px 10px 0px 10px;color:#999; line-height:30px;}
+.main .left .qaubb .tinfo{
+	 width:520px; border:1px solid #e9ead9; background:#feffe5; color:#666; height:30px;  margin-top:20px; margin-bottom:10px; line-height:30px; text-indent:10px;
+}
+.main .left .qaubb .unlogin{
+	width:100%;  height:200px; background:url(../images/qa/ubb.jpg) 0px center no-repeat; line-height:200px;
+	font-size:16px; color:#666; text-indent:180px; font-weight:bold
+}
+.main .left .qaubb .unlogin a{ color:#36C; }
+
+
+.main .left .answerbox{
+	width:730px; margin-left:10px; line-height:20px; margin-top:20px; 
+}
+
+.main .left .answerbox .answerhtml{ padding:10px 10px 10px 10px;  font-size:12px; color:#666; line-height:20px;word-break:break-all; width:100%;}
+
+.main .left .answerbox .aubaseinfo{ line-height:30px; color:#999; padding-left:5px; margin-top:10px; padding-bottom:20px; height:20px;}
+
+.main .left .answerbox .aubaseinfo a{ display:block; float:left; line-height:15px; padding-left:2px; padding-right:10px;}
+
+.main .left .answerbox .aubaseinfo a.itime{width:15px; height:15px;  padding:0;  }
+.main .left .answerbox .aubaseinfo a.iviews{width:15px; height:15px; padding:0}
+.main .left .answerbox .aubaseinfo a.itags{width:15px; height:15px; padding:0}
+.main .left .answerbox .aubaseinfo a.iauthor{width:15px; height:15px; padding:0}
+	
+.main .left .info{ width:720px; padding:10px 0 10px 9px; border:1px solid #ededed;background:#f9f9f9;font-size:14px; margin-top:20px; margin-left:10px; font-weight:800; font-family:"Microsoft Yahei"; color:#333333}
+.main .left .qades{ width:720px; margin-left:10px; margin-top:20px; padding:10px 10px 10px 10px; color:#666; overflow:hidden;word-break:break-all; }
+.main .left .qatags{  width:720px; margin-left:15px; margin-top:20px; }
+
+.main .left .qatags a{display:inline-block; height:25px; line-height:25px; padding:0px 10px 0px 10px; background:#fbfbfb; /*-moz-border-radius: 3px;   -webkit-border-radius: 3px; border-radius: 3px;*/ color:#E2E1E3; border:1px solid #EDEDED}
+
+.main .left .qatags a:hover{background:#F1FBFE; border:1px solid #CDE2ED}
+.main .left .qabase{ width:720px; margin-left:10px; margin-top:10px; padding:0px 10px 0px 10px;color:#999; line-height:30px;}
+.main .left .qabase a{ color:#999}
+
+.main .left .qabases{ width:720px; margin-left:10px; margin-top:10px; padding:0px 10px 0px 10px;color:#999; line-height:30px;}
+
+/*new qabase*/
+.main .left .qabases a{ display:block; float:left; line-height:15px; padding-left:2px; padding-right:10px;}
+
+.main .left .qabases a.itime{width:15px; height:15px;  padding:0;  }
+.main .left .qabases a.iviews{width:15px; height:15px; padding:0}
+.main .left .qabases a.itags{width:15px; height:15px;padding:0}
+.main .left .qabases a.iauthor{width:15px; height:15px;padding:0}
+
+
+.main .left .qabox{ width:720px; margin:0 auto; border-bottom:1px dotted #C4BEBD; margin-top:20px; padding-bottom:10px;}
+.main .left .qabox .qaleft{ width:60px; height:40px;  float:left; text-align:center; margin-top:10px;}
+.main .left .qabox .qaleft .recount{ line-height:40px; font-family:"Microsoft Yahei"; font-size:12px;  color:#0096bb}
+.main .left .qabox .qaleft .retext{ line-height:30px;color:#333 }
+
+
+
+.main .left .qabox .qaright{ width:620px; float:left; margin-left:20px;}
+.main .left .qabox .qaright .qa_title,.main .left .qabox .qaright .qa_title a{ font-size:14px;  color:#666666; font-family:"Microsoft Yahei"; padding-bottom:3px; line-height:30px;}
+.main .left .qabox .qaright .qa_base{ color:#999999; line-height:30px; font-size:12px; font-family:"宋体"}
+
+/*new qabase*/
+.main .left .qabox .qaright .qa_base a{ display:block; float:left; line-height:15px; padding-left:2px; padding-right:10px;}
+
+.main .left .qabox .qaright .qa_base a.itime{width:15px; height:15px;  padding:0;  }
+.main .left .qabox .qaright .qa_base a.iviews{width:15px; height:15px; padding:0}
+.main .left .qabox .qaright .qa_base a.itags{width:15px; height:15px; padding:0}
+
+
+.main .left .qabox .qaright .qa_tags a{ display:inline-block; height:25px; line-height:25px; padding:0px 10px 0px 10px; background:#fbfbfb; color:#E2E1E3; border:1px solid #EDEDED}
+.main .left .qabox .qaright .qa_tags a:hover{ background:#F1FBFE; border:1px solid #CDE2ED}
+
+.main .left .tabs{
+	 width:720px; height:35px; line-height:35px; color:#333; font-size:14px; border:1px solid #ededed;background:#f9f9f9; margin:0 auto; margin-top:20px;
+}
+.main .left .tabs ul li{
+	float:left; line-height:35px; padding:0px 20px 0px 20px;
+}
+.main .left .tabs ul li.sel{ background:#FFF}
+.main .left .tabs ul li a{ color:#666}
+
+.main .left .qabox .noneResult{ line-height:35px; font-family:"Microsoft Yahei"; text-align:center; font-size:14px;}
+.main .left .qabox .noneResult a{ color:#369}
+.main .left .tagslist{
+	width:720px; margin:0 auto; height:100%; margin-top:20px; padding-bottom:10px;
+}
+
+.main .left .tagslist ul li{ float:left; width:33%; overflow:hidden; margin-top:10px;}
+.main .left .tagslist ul li a{
+	font-size:12px; color:#b4b4b4 !important; padding:5px 13px; margin-bottom:3px; border:1px solid #ededed; border-radius:2px;background-color:#fbfbfb; display:-moz-inline-stack; display:inline-block; vertical-align:middle; text-decoration:none !important;
+}
+
+
+.official { display:block; position: absolute; width:60px; height:56px; background:url(../images/qa/juhehuifu.png) center center no-repeat; margin-left:550px;}
+
+
+
+
+.main .right .hot_tags_title{ width:180px; text-indent:1em; height:30px; line-height:30px;border:1px solid #ededed;background:#f9f9f9;color:#333; }
+.main .right .hot_tags{ }
+.main .right .hot_tags ul li{ margin:10px 0px 10px 0px;}
+.main .right .hot_tags ul li .hot_tags_link{font-size:12px; color:#b4b4b4 !important; padding:5px 13px; margin-bottom:3px; border:1px solid #ededed; border-radius:2px;background-color:#fbfbfb; display:-moz-inline-stack; display:inline-block; vertical-align:middle; text-decoration:none !important;} 
+
+
+.footer a{ color:#666}
+.footer .fi{
+	width:985px;
+	margin:0 auto;
+	text-align:center;
+	line-height:80px;
+	
+}
+.footer .fi a{ padding-right:20px}

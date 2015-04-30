@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.zju.ccnt.openapi.domain">
+
+	<class name="Api" table="t_api">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		
+		<property name="name" />
+		<property name="num" />
+		<property name="des" />
+		<property name="pictureUrl" />
+		
+		
+		<!-- type属性，本类与Type的多对一 -->
+		<many-to-one name="type" class="Type" column="typeId"></many-to-one>
+		
+		
+		<!-- querys属性，本类与Query的一对多 -->
+		<set name="querys">
+			<key column="apiId"></key>
+			<one-to-many class="Query" />
+		</set>
+		
+		<!-- errorCodes属性，本类与ErrorCode的一对多 -->
+		<set name="serviceErrors">
+			<key column="apiId"></key>
+			<one-to-many class="ServiceError" />
+		</set>
+		
+		
+	</class>
+	
+</hibernate-mapping>

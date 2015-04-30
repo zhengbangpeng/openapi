@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.zju.ccnt.openapi.domain">
+
+	<class name="Type" table="t_type">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="name" />
+		<property name="num" />
+		<property name="des" />
+		
+		
+		
+		<!-- apis属性，本类与Api的一对多 -->
+		<set name="apis">
+			<key column="typeId"></key>
+			<one-to-many class="Api" />
+		</set>
+		
+		
+	</class>
+	
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.zju.ccnt.openapi.domain">
+
+	<class name="Query" table="t_query">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="name" />
+		<property name="supportType" />
+		<property name="queryExample" />
+		<property name="requestType" />
+		<property name="url" />
+		<property name="keywords" />
+		<property name="jsonExample" type="text"/>
+		
+		
+		<!-- api属性，本类与api的多对一 -->
+		<many-to-one name="api" class="Api" column="apiId"></many-to-one>
+		
+		<!-- parameters属性，本类与Parameter的一对多 -->
+		<set name="parameters">
+			<key column="queryId"></key>
+			<one-to-many class="Parameter" />
+		</set>
+		
+		<!-- returnParameters属性，本类与ReturnParameter的一对多 -->
+		<set name="returnParameters">
+			<key column="queryId"></key>
+			<one-to-many class="ReturnParameter" />
+		</set>
+		
+		
+	</class>
+	
+</hibernate-mapping>

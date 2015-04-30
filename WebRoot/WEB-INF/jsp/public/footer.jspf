@@ -1,0 +1,81 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+
+<style type="text/css">
+/* footer*/
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px; /*margin-bottom的负值等于footer高度*/
+}
+
+.push,#footer {
+	height: 60px;
+	clear: both;
+}
+
+.footer {
+	width: 100%;
+	background: url(/themes/images/bottom_bg_repeat.png) left -20px repeat-x;
+	margin-top: 30px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+
+.footer a {
+	color: #bbb
+}
+
+.footer ul {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.footer ul li {
+	float: left;
+	padding: 0px 20px 0px 0px;
+	line-height: 40px;
+	text-align: left
+}
+
+.footer .fi {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 30px;
+}
+
+.footer .fi a {
+	padding-right: 20px;
+	color: #bbb
+}
+</style>
+
+<div class="clearfix"></div>
+<div id="footer">
+	<div class="footer">
+		<div class="fi">
+			<a
+				href="http://img.juhe.cn/docs/%E8%81%9A%E5%90%88%E6%95%B0%E6%8D%AEAPI%E7%94%B3%E8%AF%B7%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B.pdf"
+				target="_blank" title="新手指引" rel="nofollow">新手指引</a><a
+				href="/privacy" target="_blank" title="隐私政策" rel="nofollow">隐私政策</a><a
+				href="/legal" target="_blank" title="服务条款" rel="nofollow">服务条款</a><a
+				href="/login" rel="nofollow">加入我们</a><a href="/job" rel="nofollow">聚合招聘</a><a
+				href="http://www.juhe.cn/links" rel="nofollow">友情链接</a><a
+				href="/contact" rel="nofollow">联系我们</a><a>苏州新科兰德科技有限公司©版权所有</a>
+		</div>
+		<div class="fi">
+			<a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">&nbsp;苏ICP备14006450号-3</a><a
+				href="http://jscainfo.miitbeian.gov.cn/state/outPortal/loginPortal.action"
+				target="_blank">增值电信业务经营许可证：苏B2-20140496</a>
+		</div>
+
+	</div>
+</div>

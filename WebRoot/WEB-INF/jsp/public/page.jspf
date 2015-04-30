@@ -1,0 +1,51 @@
+<!--paging start-->
+<s:if test="pageCount != 0">
+	<div>
+		<div class="col-xs-1"></div>
+		<div id="juheapi_paging">
+			<nav>
+
+				<ul class="pagination pagination-lg">
+					<s:if test="currentPage == 1">
+						<li class="disabled "><a aria-label="Previous"
+							class="z_pre disabled"> <span aria-hidden="true">&laquo;</span>
+						</a></li>
+					</s:if>
+					<s:else>
+						<li><a href="#" aria-label="Previous" class="z_pre"
+							onclick="gotoPage(${currentPage}-1);"> <span
+								aria-hidden="true">&laquo;</span>
+						</a></li>
+					</s:else>
+					<s:iterator begin="%{beginPageIndex}" end="%{endPageIndex}"
+						var="num">
+
+						<s:if test="#num == currentPage">
+							<li class="active z_page" onclick="gotoPage(${num});"><a
+								href="#">${num}</a></li>
+						</s:if>
+						<s:else>
+							<li><a href="#" class="z_page" onclick="gotoPage(${num});">${num}</a></li>
+						</s:else>
+					</s:iterator>
+
+					<s:if test="currentPage == pageCount">
+						<li class="disabled"><a aria-label="Next" class="z_next">
+								<span aria-hidden="true">&raquo;</span>
+						</a></li>
+					</s:if>
+					<s:else>
+						<li><a href="#" aria-label="Next" class="z_next"
+							onclick="gotoPage(${currentPage}+1);"> <span
+								aria-hidden="true">&raquo;</span>
+						</a></li>
+					</s:else>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+</s:if>
+
+
+<!--paging end-->

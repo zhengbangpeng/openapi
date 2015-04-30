@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>api</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<body>
+<div class="container" style="min-width:1280px">
+<div class="row" >
+		<h1 class="col-lg-2 col-md-2 col-sm-2">Open API</h1>
+		<div class="col-lg-7  col-md-7 col-sm-7" id="search" style=" padding-top: 15px; padding-bottom: 15px;">
+				<div class="input-group input-group-lg">
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+						<button class="btn btn-default" type="button">Go!</button>
+						</span> </div>
+		</div>
+</div>
+<div class="row">
+		<ul class="nav nav-pills nav-justified">
+				<li role="presentation" ><a href="index.html">首页</a> </li>
+				<li role="presentation" class="active"><a href="api.html">数据接口API</a> </li>
+				<li role="presentation"><a href="#">资讯&amp;动态</a> </li>
+		</ul>
+</div>
+<div class="row">
+<div class="col-lg-3">
+<dl>
+		<dt>功能分类</dt>
+		<dd class="active"><a href="/docs">所有数据<span>（116）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/1">生活常用<span>（26）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/11">天气预报<span>（4）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/10">车辆服务<span>（7）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/3">位置信息服务<span>（7）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/4">金融基金<span>（9）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/14">充值缴费<span>（7）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/13">即时通讯<span>（3）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/6">影视娱乐<span>（8）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/9">旅游出行<span>（13）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/8">站长工具<span>（6）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/5">全网数据<span>（4）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/12">问答知识<span>（5）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/15">应用开发<span>（5）</span></a> </dd>
+		<dd  ><a href="/docs/index/cid/7">其他数据<span>（8）</span></a> </dd>
+</dl>
+<dl>
+</div>
+<div id="juheapi_main" class="col-lg-7">
+		<div id="juheapi_main_title">
+				<div class="juheapi_main_title">
+						<h1>天气预报<span>（4个）</span></h1>
+						<ul class="clear api_sort">
+								<li class="active"><a href="/docs/index/sortby/1/cid/11">默认排序</a></li>
+								<li ><a href="/docs/index/sortby/2/cid/11">最新上线</a></li>
+								<li ><a href="/docs/index/sortby/3/cid/11">连接APP数</a></li>
+								<li ><a href="/docs/index/sortby/4/cid/11">收藏数</a></li>
+						</ul>
+				</div>
+		</div>
+		<!--api start-->
+		<ul id="juheapis_ul">
+				<!--聚合SDK--> 
+				<!--End 聚合SDK-->
+				<li>
+						<div class="juheapis_desc clear"> <a class="juheapi_imga" href="/docs/api/id/39"><img src="http://www.juhe.cn/themes/images/data/new/a39.png" width="80" height="80"/></a>
+								<div class="juheapis_desc_fl">
+										<h1> <a href="/docs/api/id/39">全国天气预报</a> <span class="h1_span juhe_color1">聚合官方</span> <span class="h1_span sdk_color2">SDK v2</span> </h1>
+										<p class="juhe_desc_p1">全国天气查询API</p>
+										<p class="juhe_desc_p2"> <span class="juheapi_score juheapi_score4">4.5</span> <em>已连接APP数：<strong>9501</strong></em> </p>
+										<p class="juhe_desc_p3"> 新年优惠套餐：<strong>1.10元=</strong>10000次 - 申请即送<strong>500次</strong>免费使用</p>
+										<a class="juheapi_apply"  href="javascript:xlogin();" data="/my/apply/id/">立即申请</a> <a class="juheapi_heart" id="juheapi_heart_39" >收藏（0）</a> </div>
+						</div>
+				</li>
+				<li>
+						<div class="juheapis_desc clear"> <a class="juheapi_imga" href="/docs/api/id/33"><img src="http://www.juhe.cn/themes/images/data/new/a33.png" width="80" height="80"/></a>
+								<div class="juheapis_desc_fl">
+										<h1> <a href="/docs/api/id/33">空气质量</a> <span class="h1_span juhe_color1">聚合官方</span> <span class="h1_span sdk_color2">SDK v2</span> </h1>
+										<p class="juhe_desc_p1">城市空气质量、城市空气PM2.5指数、城市辐射指数</p>
+										<p class="juhe_desc_p2"> <span class="juheapi_score juheapi_score4">4.5</span> <em>已连接APP数：<strong>4066</strong></em> </p>
+										<p class="juhe_desc_p3"> 新年优惠套餐：<strong>1.10元=</strong>10000次 - 申请即送<strong>100次</strong>免费使用</p>
+										<a class="juheapi_apply"  href="javascript:xlogin();" data="/my/apply/id/">立即申请</a> <a class="juheapi_heart" id="juheapi_heart_33" >收藏（0）</a> </div>
+						</div>
+				</li>
+				<li>
+						<div class="juheapis_desc clear"> <a class="juheapi_imga2" href="/docs/api/id/73"><img src="http://www.juhe.cn/themes/images/data/new/a73.png" width="80" height="80"/></a>
+								<div class="juheapis_desc_fl">
+										<h1> <a href="/docs/api/id/73">天气预报</a> <span class="h1_span juhe_color2">第三方</span> <span class="h1_span sdk_color2">SDK v2</span> </h1>
+										<p class="juhe_desc_p1">全国天气预报，生活指数、实况、PM2.5等信息</p>
+										<p class="juhe_desc_p2"> <span class="juheapi_score juheapi_score4">4.5</span> <em>已连接APP数：<strong>2113</strong></em> </p>
+										<p class="juhe_desc_p3"> 套餐：<strong>99.00元=</strong>50000次 - 申请即送<strong>100次</strong>免费使用</p>
+										<a class="juheapi_apply"  href="javascript:xlogin();" data="/my/apply/id/">立即申请</a> <a class="juheapi_heart" id="juheapi_heart_73" >收藏（0）</a> </div>
+						</div>
+				</li>
+				<li>
+						<div class="juheapis_desc clear"> <a class="juheapi_imga" href="/docs/api/id/34"><img src="http://www.juhe.cn/themes/images/data/new/a34.png" width="80" height="80"/></a>
+								<div class="juheapis_desc_fl">
+										<h1> <a href="/docs/api/id/34">水质量</a> <span class="h1_span juhe_color1">聚合官方</span> <span class="h1_span sdk_color2">SDK v2</span> </h1>
+										<p class="juhe_desc_p1">流域查询水质量，监测站点查询水质量 </p>
+										<p class="juhe_desc_p2"> <span class="juheapi_score juheapi_score4">4.5</span> <em>已连接APP数：<strong>599</strong></em> </p>
+										<p class="juhe_desc_p3"> 套餐：<strong>99.00元=</strong>10000次 - 申请即送<strong>100次</strong>免费使用</p>
+										<a class="juheapi_apply"  href="javascript:xlogin();" data="/my/apply/id/">立即申请</a> <a class="juheapi_heart" id="juheapi_heart_34" >收藏（0）</a> </div>
+						</div>
+				</li>
+		</ul>
+		<!--api end--> 
+		<!--paging start-->
+		
+		<div id="juheapi_paging"> </div>
+		<!--paging end--> 
+</div>
+</div>
+</div>
+</body>
+</html>
